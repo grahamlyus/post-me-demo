@@ -21,5 +21,8 @@
     "serve": "^11.3.2",
     "tslib": "^2.0.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }

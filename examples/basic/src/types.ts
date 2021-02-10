@@ -1,5 +1,21 @@
+export type WorkletMethods = {
+  setWorkerPort: (port: MessagePort) => void;
+  sum: (
+    x: number,
+    y: number,
+    onProgress: (p: number) => void
+  ) => Promise<number>;
+};
+
+export type WorkletEvents = {};
+
 export type WorkerMethods = {
-  sum: (x: number, y: number, onProgress: (p: number) => void) => Promise<number>;
+  setWorkletPort: (port: MessagePort) => void;
+  sum: (
+    x: number,
+    y: number,
+    onProgress: (p: number) => void
+  ) => Promise<number>;
 };
 
 export type WorkerEvents = {};
